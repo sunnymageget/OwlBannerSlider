@@ -1,0 +1,22 @@
+<?php 
+
+$collection = $block->getBanners();
+$mediaurl = $block->mediaurl();
+?>
+
+<div class="owl-slider">
+<div id="carousel" class="owl-carousel">
+
+<!-- my name is sunny -->
+
+<?php foreach ($collection as $item) {
+?>
+<div class="item">
+  <img src="<?php echo $mediaurl .
+      "BannerSlider_OwlSlider/" .
+      $item->getData("image"); ?>">
+</div>
+
+<?php } ?>
+</div>
+</div>

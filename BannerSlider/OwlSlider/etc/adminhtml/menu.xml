@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+       
+    <add id="BannerSlider_OwlSlider::bannerslider" title="Manage Slider" 
+         module="BannerSlider_OwlSlider"
+         sortOrder="20"
+         action="managebanner/banner/index" 
+         resource="BannerSlider_OwlSlider::bannerslider"/>
+         
+
+ <!-- <add id="Mageget_Slider::settings" 
+        title="Settings" translate="title" 
+        module="Mageget_Slider" 
+        parent="Mageget_Slider::manager" 
+        sortOrder="60" 
+        dependsOnModule="Mageget_Slider" 
+        resource="Mageget_Slider::settings"/> -->
+
+
+
+    <!-- <add id="Mageget_Slider::add_row_configuration"
+                title="Configuration Slider"
+                resource="Magento_Backend::content"
+                module="Mageget_Slider"
+                sortOrder="70"
+                action="adminhtml/system_config/edit/section/slider"
+                parent="Mageget_Slider::settings" /> -->
+   </menu>
+</config>

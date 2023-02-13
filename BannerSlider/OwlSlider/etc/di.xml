@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="BannerSlider\OwlSlider\Api\Data\GridInterface" type="BannerSlider\OwlSlider\Model\Banner" />
+
+    <virtualType name="BannerSlider\OwlSlider\Model\ResourceModel\Banner\Banner\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mageget_banner</argument>
+            <argument name="resourceModel" xsi:type="string">BannerSlider\OwlSlider\Model\ResourceModel\Banner</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="banner_record_grid_list_data_source" xsi:type="string">BannerSlider\OwlSlider\Model\ResourceModel\Banner\Banner\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>   
